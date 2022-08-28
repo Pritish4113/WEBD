@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Prompt:ital,wght@1,600;1,700&family=Varela+Round&family=Work+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Prompt:ital,wght@1,600&family=Righteous&family=Varela+Round&family=Work+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    height: 55vh;
+}
+
+nav{
+    display: flex;
+    height: 54px;
+    padding: 6px;
+}
+
+nav ul{
+    display:flex;
+    list-style: none;
+    margin: 17px 45px;
+}
+
+nav ul a{
+    font-family: Okra, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #ddd;
+    margin: 0px 24px;
+}
+
+nav ul a:hover{
+    color: white;
+}
+
+header::before{
+    content: "";
+    background: url('img/intro.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 56%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    top : 0px;
+    bottom: 0px;
+}
+
+
+.intro{
+    font-family: Okra, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.intro h1{
+    font-family: 'Righteous', cursive;
+    font-size: 5.5rem;
+    margin: 74px 0 0 0;
+}
+
+.intro p{
+    margin: 20px 0 0 0;
+    font-size: 2.3rem;
+}
+
+.intro span{
+    font-weight: bold;
+}
+
+.intro input{
+    margin: 28px 0 110px 0;
+    width: 55vw;
+    height: 3rem;
+    padding: 0 0 0 15px;
+    border-radius: 15px;
+}
+
+.container{
+    background-color: #e6e5e5;
+    /* height: 210vh; */
+}
+
+#services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#services h2{
+    font-family: Okra, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    margin: 20px 0 0 0;
+}
+
+.cardpanel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 0 0;
+}
+
+.card1{
+    background: url('img/food.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0px 20px;
+    height: 35vh;
+    width: 29vw;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card2{
+    background: url('img/dining.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0px 20px;
+    height: 35vh;
+    width: 29vw;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card3{
+    background: url('img/nightlife.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0px 20px;
+    height: 35vh;
+    width: 29vw;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cardcontent{
+    background-color: white;
+    border-radius: 15px 15px 0 0;
+    height: 9vh;
+}
+
+.p1{
+    font-size: 1.4rem;
+    font-family: Okra, Helvetica, sans-serif;
+    margin: 12px 0 0 20px;
+    font-weight: bold;
+}
+.p2{
+    font-size: 1.25rem;
+    font-family: Okra, Helvetica, sans-serif;
+    margin: 4px 0 0 19px;
+}
+
+#Outlets{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Outlets h2{
+    font-family: Okra, Helvetica, sans-serif;
+    font-size: 2.25rem;
+    margin: 65px 0 0 17px;
+}
+
+.cardpanel2{
+    margin: 28px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.outletcard{
+    height: 25vh;
+    width: 25vh;
+    margin: 0 5px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.outletcard:hover{
+    border: 3px solid black;
+}
+
+#outlet1{
+    background: url('img/dominos.jpg') no-repeat center center/cover;
+}
+#outlet2{
+    background: url('img/burgerkign2.webp') no-repeat center center/cover;
+}
+#outlet3{
+    background: url('img/kfc.jpg') no-repeat center center/cover;
+}
+#outlet4{
+    background: url('img/McDonalds.png') no-repeat center center/cover;
+}
+#outlet5{
+    background: url('img/subway.jpg') no-repeat center center/cover;
+}
+#outlet6{
+    background: url('img/pizzahut.png') no-repeat center center/cover;
+}
+
+#collections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#collections h2{
+    font-family: Okra, Helvetica, sans-serif;
+    font-size: 2.25rem;
+    margin: 50px 0 0 0;
+}
+#collections p{
+    font-family: Okra, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    margin: 17px 0 0 0;
+}
+
+.cardpanel3{
+    margin: 28px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.collectioncard{
+    background-color: black;
+    height: 38vh;
+    width: 28vh;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.collection1::before{
+    content: "";
+    background: url('img/picturecafe.jpg') no-repeat center center/cover;
+    border-radius: 8px;
+    position: absolute;
+    height: 38vh;
+    width: 28vh;
+    opacity: 0.65;
+}
+.collection1{
+    height: 38vh;
+    width: 32vh;
+    display: flex;
+    align-items: flex-end;
+}
+.collection1 p{
+    font-family: Okra, Helvetica, sans-serif;
+    color: white;
+    z-index: 2;
+    font-weight: bold;
+    position: absolute;
+    font-size: 1.15rem;
+    margin: 0 0 10px 13px;
+}
+
+.collection2::before{
+    content: "";
+    background: url('img/oldelhi.png') no-repeat center center/cover;
+    position: absolute;
+    border-radius: 8px;
+    height: 38vh;
+    width: 28vh;
+    opacity: 0.65;
+}
+.collection1:hover{
+    opacity: 0.9;
+}
+.collection2{
+    display: flex;
+    align-items: flex-end;
+    height: 38vh;
+    width: 32vh;
+}
+.collection2:hover{
+    opacity: 0.9;
+}
+.collection2 p{
+    font-family: Okra, Helvetica, sans-serif;
+    color: white;
+    z-index: 2;
+    font-weight: bold;
+    position: absolute;
+    font-size: 1.15rem;
+    margin: 0 0 10px 13px;
+}
+
+.collection3::before{
+    content: "";
+    background: url('img/romantic.jpg') no-repeat center center/cover;
+    position: absolute;
+    border-radius: 8px;
+    height: 38vh;
+    width: 28vh;
+    opacity: 0.65;
+}
+.collection3{
+    display: flex;
+    align-items: flex-end;
+    height: 38vh;
+    width: 32vh;
+}
+.collection3:hover{
+    opacity: 0.9;
+}
+.collection3 p{
+    font-family: Okra, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    z-index: 2;
+    position: absolute;
+    font-size: 1.15rem;
+    margin: 0 0 10px 13px;
+}
+
+.collection4::before{
+    content: "";
+    background: url('img/legendary.jpg') no-repeat center center/cover;
+    position: absolute;
+    border-radius: 8px;
+    height: 38vh;
+    width: 28vh;
+    opacity: 1;
+}
+.collection4{
+    display: flex;
+    align-items: flex-end;
+    height: 38vh;
+    width: 32vh;
+}
+.collection4:hover{
+    opacity: 0.9;
+}
+.collection4 p{
+    font-family: Okra, Helvetica, sans-serif;
+    color: white;
+    z-index: 2;
+    font-weight: bold;
+    position: absolute;
+    font-size: 1.15rem;
+    margin: 0 0 10px 13px;
+}
+
+.places{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.places p{
+    font-family: Okra, Helvetica, sans-serif;
+    font-size: 2.25rem;
+    margin: 50px 0 0 0;
+}
+.places span{
+    font-family: Okra, Helvetica, sans-serif;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.cardpanel4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 38px 0 0 0;
+}
+.placecard{
+    border: 0.01px solid grey;
+    border-radius: 10px;
+    color: #232323;
+    width: 25vw;
+    height: 10vh;
+    margin: 0 20px 20px 0;
+    cursor: pointer;
+}
+.placecard:hover{
+    border: 0.01px solid black;
+}
+
+footer {
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  
+  footer p {
+    font-family: Okra, Helvetica, sans-serif;
+    padding: 20px;
+    color: white;
+    font-size: 1rem;
+  }
