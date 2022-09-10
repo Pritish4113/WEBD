@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-image: linear-gradient(120deg, #5f57d1, #c065c0);
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#container h1{
+    margin: 40px;
+    font-size: 4rem;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+}
+
+#addtask{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 40px 0;
+}
+
+#addtask input{
+    width: 35vw;
+    height: 6.5vh;
+    font-size: 1.39rem;
+    padding: 0 0 0 12px;
+    font-family: 'Roboto Slab', serif;
+}
+
+#addbtn{
+    background-color: green;
+    cursor: pointer;
+    width: 4vw;
+    height: 6.9vh;
+    margin: 0 0 0 7px;
+    border: none;
+}
+#addbtn img{
+    width: 3.8vw;
+    height: 6.5vh;
+}
+
+#rembtn{
+    background-color: #ff3a3a;
+    cursor: pointer;
+    border: none;
+    margin: 0 7px 0 0;
+}
+#rembtn img{
+    width : 2.7vw;
+}
+
+#editbtn{
+    background-color: #fbc800;
+    cursor: pointer;
+    border: none;
+    margin: 0 3px 0 0;
+
+}
+#editbtn img{
+    width: 2.8vw;
+}
+
+#tasks ul{
+    list-style: none;
+}
+
+#tasks ul li{
+    width: 55vw;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 13px;
+    background-color: white;
+    margin: 0 0 15px 0;
+}
+
+#tasks ul li span{
+    font-size: 1.6rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops</title>
+</head>
+<body>
+    <div class="container">
+        <p>
+            hello
+        </p>
+    </div>
+</body>
+<script>
+    let friends = ['pritish','harsh','ayush','mudit','aman']; //an array
+    let person = {name:'pritish', hobby : 'singing', work : 'coding'}; //an object
+
+    //this is the basic way of iterating through an array
+    for(let i = 0;i<friends.length;i++){
+        console.log("hello " + friends[i]);
+    }
+
+    //this is another way of iterating through every element of the array
+    friends.forEach(function f(element){
+        console.log("HELLO " + element);
+    });
+
+    //this is another easier way of iterating through every element of the array ( for(of) loop )
+    for(element of friends){
+        console.log("hi " + element);
+    }
+
+    //iterating through an object ( for(in) loop )
+    for(key in person){
+        console.log(`the ${key} of the person is ${person[key]}`);
+    }
+
+    //while loop in javascript(it is same as that in cpp)
+    let i = 0;
+    while(i<4){
+        console.log(i + " is smaller than 4");
+        i++;
+    }
+
+    //do-while in javascript(it is same as that in cpp)
+    do{
+        console.log(i + " is smaller than 4 and we are inside so while loop");
+        i++;
+    }
+    while(i<4);
+</script>
+
+</html>

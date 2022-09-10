@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrow functions</title>
+</head>
+<body>
+    <div class="container">
+        <p>
+            hello
+        </p>
+    </div>
+</body>
+<script>
+    //arrow functions provide us with an easier way of creating a function...eg:
+    greet = ()=> console.log("heyy everybody");
+    sum = (a,b)=> a+b;
+    half = a=> a/2;
+
+    //using our functions
+    greet();
+    console.log(sum(2,3));
+    console.log(half(4));
+
+
+    let obj1 = {
+        names : ['pritish','ritwik','prakhar'],  //creating an array
+        greetings : 'heyyy',  //creating a greeting
+
+        //here we created a function that will run for element of names array
+        speak(){
+            this.names.forEach((person)=>{
+                console.log(this.greetings + " " + person); //here we created an arrow function inside speak()
+            })
+        }
+    }
+    //here above this.greetings will take this as speak()
+    //for more understanding watch ----> https://youtu.be/OkFPMOudomg from 8:40
+
+    obj1.speak(); //calling speak()
+
+</script>
+</html>

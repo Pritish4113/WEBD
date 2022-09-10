@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects and arrays</title>
+</head>
+<script>
+
+    //here below we have declared an object, in objects we can any datatype
+    let object = {
+        name : 'pritish',
+        age : 19,
+        surname : 'singhal',
+        'my motto' : 'be childish, be creative',  //for making keys with spaces, we have to enclose it in quotes
+    }
+    console.log(object);
+
+    //here below we have declared 2 arrays (array is a type of object only)
+
+    //this one way declaring an array
+    let employee = ['pritish',19,'singhal',null,undefined];
+    console.log(employee);
+    //this is the second way of declaring an array
+    let employee2 = new Array(30,20,34,null,undefined,'pritish'); //null and undefined are 2 types of datatypes
+    console.log(employee2);
+
+
+    //for printing length of an array
+    console.log(employee2.length);
+    
+
+    //for sorting an array....HOWEVER SORT FUNCTION IN JS DOESNT WORK NORMALLY...IT WORKS PROPERLY ONLY WHEN ALL THE ENTITIES IN THE ARRAY HAVE SAME NUMBER OF DIGITS....LEARN MORE ABOUT IT BY SEARCHING IT ONLINE..
+    employee2 = employee2.sort();
+    console.log(employee2);
+
+
+    //adding an element to the array (push())
+    employee2.push('this is pushed');
+    console.log(employee2);
+
+
+    //accessing the elements of an object
+    console.log(object.name); //this is one way accessing the elements of an object
+    console.log(object['my motto']); //this way is used when there are spaces in between the keys
+
+
+    //making arrays with pre-defined size
+    let arr = new Array(20);
+    console.log(arr);
+    //here above we created an array with 20 empty element slots
+
+</script>
+
+<body>
+    <div class="container">
+        <p>
+            hello
+        </p>
+    </div>
+</body>
+</html>

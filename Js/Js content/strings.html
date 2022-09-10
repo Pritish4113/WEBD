@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var name = 'pritish';
+    var surname = 'singhal';
+    var len = name.length;  //length funtion
+    var str = 'this is pritish singhal';
+ 
+    //use of ${}
+    var temp = `${name} is a nice person and his surname is ${surname}`; // `` is called backticks
+    console.log(temp);
+    console.log(`length of ${name} is ${len}`);
+
+    //fucntions of strings
+
+    // str.indexof (first occurence of the substring)
+    var position = str.indexOf('is');
+    console.log(position);
+
+    // str.LastIndexOf (last occurence of the substring)
+    var position = str.lastIndexOf('is');
+    console.log(position);
+
+    //slicing of a string 
+
+    // first method of slicing the string
+    var string = str.slice(1,9); //prints from 1 to n-1
+    var string2 = str.substring(1,9); //prints from 1 to n-1
+    console.log(string);
+    console.log(string2);
+
+    //second method of slicing the string 
+    var string3 = str.substr(1,9); //here 1 is the starting point and 9 is the length of the sliced string
+    console.log(string3);
+
+    // replace fucntion
+    var replaced = str.replace('pritish','chinu');
+    console.log(replaced);
+
+    //lowercase and uppercase
+    console.log(str.toUpperCase());
+    console.log(str.toLowerCase());
+
+    //trimming whitespace function
+    var whitespace = '   hello everyone   hi '
+    console.log(whitespace);
+    console.log(whitespace.trim()); //this trims whitespaces from beginning and the end of the string
+
+    //finding character at given index
+    var char = str.charAt(2);
+    console.log(char);
+    //another way
+    console.log(str[2]);
+
+
+
+</script>
+
+<body>
+    <h1>hello</h1>
+</body>
+</html>

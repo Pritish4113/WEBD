@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>here we will learn about positioning of elements in html document, using css</title>
+</head>
+<style>
+    body{
+        height : 4000px;
+    }
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .box1{
+        background-color: red;
+        color: white;
+        width: 100vw;
+        height: 30vh;
+    }
+
+    /* now here if we want to shift the position of our box 2.....we will use position properties */
+    .box2{
+        position: relative; /* this will help us to move our element */
+        left : 70px;
+        bottom: 80px;
+
+        /* there are more positioning properties :
+
+        1)STATIC (all are static by default)
+        2)RELATIVE (we can move our element without disturbing any other element)
+        3)ABSOLUTE (we can move our element, relative to its last non static element, however all other elemets will ignore the element we want to move)
+        4)FIXED 
+        5)STICKY
+
+        NOTE: posititvely try all the above properties out  */
+
+        /* NOTE 2 : also check out what is z-index, it is important */ 
+
+        background-color: blue;
+        color: white;
+        width: 50vw;
+        height: 50vh;
+    }
+
+    li{
+        list-style: square; /*here we set the bullets as square */
+        list-style: square outside url('blue_bullet.jpg');  /* this is the short hand way of writing list style */
+
+        /* inside here means that the bullets will be included inside the ul */
+    }
+</style>
+<body>
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reprehenderit magnam vitae architecto laboriosam impedit reiciendis nulla, atque nesciunt accusantium adipisci velit quaerat placeat, illum id numquam, esse et repudiandae iste ut at modi!
+    </div>
+    <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quae. Voluptates, sapiente, nam odit ut eius impedit veritatis, inventore delectus quam repellendus est consectetur eos itaque! Dicta adipisci nostrum suscipit doloremque consectetur fuga numquam.</div>
+<ul>
+    <li>Home</li>
+    <li>About</li>
+    <li>Contact</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+    color: white;
+}
+
+nav{
+    display: flex;
+}
+
+nav ul{
+    margin: 20px 0 24px 0;
+    display: flex;
+}
+
+nav ul li{
+    margin:0 0 0 50px;
+    list-style: none;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+input{
+    width: 35vw;
+}
+
+#addbtn{
+    background-color: green;
+    margin: 0 10px 0 20px;
+    cursor: pointer;
+}
+
+#rembtn{
+    background-color: red;
+    cursor: pointer;
+    color: white;
+}
+
+#editbtn{
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.chapters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.chapters ul{
+    list-style: none;
+}
+
+.chapters ul li{
+    border: 2px solid black;
+    width: 37vw;
+}

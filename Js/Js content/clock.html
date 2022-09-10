@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+</head>
+
+<style>
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    span{
+        background-color: burlywood;
+        color: black;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding : 40px;
+        font-size: 26px;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <span id="time">
+        </span>
+    </div>
+</body>
+
+<script>
+    function displaytime(){
+        let time = new Date();  //this stores the time in the variable
+        console.log(time);
+        document.getElementById('time').innerHTML = time; //this inculcates the time variable in our HTML code
+    }
+    setInterval(displaytime, 1000);
+</script>
+</html>

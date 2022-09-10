@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation on DOM(document object model</title>
+</head>
+<body>
+    <div id = "main" class="container">
+        <p>
+            hello
+        </p>
+        <nav id = "nav">
+            <ul>
+                <li>home</li>
+                <li>services</li>
+                <li>about us</li>
+                <li>contact us</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <p>hello again</p>
+    </div>
+</body>
+
+<script>
+    //accessing elements from DOM using their IDs (getElementById())
+    let main = document.getElementById('main');
+    console.log(main);
+
+    let nav = document.getElementById('nav');
+    console.log(nav);
+
+
+    //accessing elements from DOM using their classes (getElementsByClassName())
+    let container = document.getElementsByClassName('container');
+    console.log(container);
+
+
+    //accessing elements from DOM using their classes (getElementsByClassName())
+    let sel = document.querySelectorAll('#nav>ul>li');
+    console.log('selector returns',sel);
+
+    //ABOVE HERE IS JUST THE BASICS,WATCH --> https://youtu.be/fYR3i0mcE5c for completely understanding DOM navigation
+    
+    
+</script>
+</html>

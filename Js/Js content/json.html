@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json in javascript</title>
+</head>
+<body>
+    <div class="container">
+        <p>
+            hello
+        </p>
+    </div>
+</body>
+<script>
+    //creating a json object
+    let json_obj = {
+        name : 'pritish',
+        food : 'dhokla',
+        surname : 'singhal'
+    };
+    console.log(json_obj);
+
+
+    //converting json object to json string
+    let json_str = JSON.stringify(json_obj);
+    console.log(json_str);
+
+
+    //we can apply string functions to the json string
+    json_str = json_str.replace('dhokla', 'butter chicken');
+    console.log(json_str);
+
+
+    //converting json string back to json object
+    newjson_obj = JSON.parse(json_str);
+    console.log(newjson_obj);
+
+
+    //for understanding above mentioned code watch ---->  https://youtu.be/ju5j7rfXXTE
+</script>
+
+</html>

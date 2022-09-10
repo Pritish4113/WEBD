@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLEXBOX</title>
+  </head>
+  <style>
+    .container{
+        height: 150vh;
+        background-color: black;
+
+        display: flex; /* we write this for using flexbox */
+
+        /* this defines the direction in which our boxes will render i.e. in rows or columns....by default row rendering happens */
+
+        flex-wrap: wrap;
+        /* this wraps our elements according to the size of our window */
+
+        justify-content: center;
+        /* this brings our element to the center of the main axis....i.e. center of the horizontal line */
+
+        align-items: center;
+        /* this brings our element to the center vertically */
+
+        align-content: center;
+        /* this also brings our element to the center vertically but without leaving any whitespace....pleaee try out for better understanding */
+    }
+    .box1{
+        height:200px;
+        width:200px;
+        background-color: red;
+        color: white;
+    }
+    .box2{
+        height:200px;
+        width:200px;
+        background-color: blue;
+        color: white;
+    }
+    .box3{
+        height:200px;
+        width:200px;
+        background-color: green;
+        color: white;
+    }
+    .box4{
+        height:200px;
+        width:200px;
+        background-color: aqua;
+        color: black;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="box1">box1</div>
+      <div class="box2">box2</div>
+      <div class="box3">box3</div>
+      <div class="box4">box4</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+</head>
+<body>
+    <div class="container">
+        <ul id = 'links'>
+
+            <!-- THE TASK IS TO MAKE ALL THE LINKS CONTAINING "://" ORANGE , EXCEPT ://internal.com -->
+
+            <li><a href="http://google.com">http://google.com</a></li>
+            <li><a href="http://nodejs.org">http://nodejs.org</a></li>
+            <li><a href="/tutorial.html">/tutorial.html</a></li>
+            <li><a href="ftp://ftp.com/zip">ftp://ftp.com/zip</a></li>
+            <li><a href="http://internal.com">http://internal.com</a></li>
+            <li><a href="local/path">local/path</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    let selector = 'a[href *= "://"]:not([href *= "http://internal.com"])';
+    let links = document.querySelectorAll(selector);
+
+    links.forEach(changecolor);
+
+    function changecolor(link){
+        link.style.color = 'orange'
+    }
+
+</script>
+</html>

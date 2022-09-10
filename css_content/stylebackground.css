@@ -1,0 +1,42 @@
+*{
+    /* "*" is the select all operator */
+    margin: 0; 
+    padding: 0;
+
+    /* when we set margin = 0 and padding = 0, then all the default gaps that the browser sets, are removed */
+}
+.container{
+    background-color: yellow;
+    color: white;
+    width : 334px; /* this width and height of our div conatainer*/
+    height : 334px;
+    background-image: url(pikachu.jpg);
+    background-repeat: no-repeat;
+
+    /* BACKGROUND SIZE */
+    background-size: cover; /* cover's task is to cover our container with our image no matter what*/
+    background-size: contain; /* conatain's task is to display the image without spoiling its aspect ratio*/
+
+}
+
+.green{
+    background-color: green;
+    color: black;
+    border: black;
+}
+
+body{
+    background-image: url(shinchan.png);
+    /* now here our image will get repeated in out background */
+
+    background-repeat: no-repeat; /*here image will not be repeated i.e. only one image will be displayed*/
+    background-repeat: repeat-x;  /*here our image will get repeated only in the x axis*/
+    background-repeat: repeat-y;  /*here our image will get repeated only in the y axis*/
+    background-repeat: space;     /*here all our image will be placed such a way that all our images are displayed fully, without any cuts*/
+    
+    /* BACKGROUND POSITION */
+    background-position: bottom right; /*here our image will be displayed at the bottom right if our body*/
+
+    /* BACKGROUND ATTACHMENT */
+    background-attachment: fixed; /* check other types of background attachments by going to the mdn reference website*/
+}

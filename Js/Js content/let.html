@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>let instead of var</title>
+</head>
+<script>
+    var string = 'this is string 1';
+    var string = 'this is string 2';
+    //here above we declared varaible string 2 times....which can be done by mistake by anyone....however Js dont show ant error on this...
+
+    //so from now we drop the above given method of declaring varaibles and adopt a new one
+    let string1 = 'this is string 1';
+    // let string1 = 'this is string 2';  //this will a given an error in our console...thus better method
+
+    const b = 'hello';
+    //the value assigned as const variable cannot be changed
+    console.log(b);
+</script>
+<body>
+    <div class="container">
+        <p>hello</p>
+    </div>
+</body>
+</html>

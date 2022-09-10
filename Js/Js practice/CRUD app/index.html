@@ -1,0 +1,40 @@
+<!-- CRUD means create, read, update and delete -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD app</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Services</li>
+                <li>About</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="search">
+            <input id = 'chaptername' type = 'text' name = 'search' placeholder="type here">   
+            <button id = 'addbtn'>Add</button> 
+        </div>
+        <div class="chapters">
+            <ul id = 'chapterlist'>
+                <li class = 'chapterno'>
+                    <span>Chapter 1</span>
+                    <button id = 'editbtn' onclick = "editchapter(this)">Edit</button>
+                    <button id = "rembtn" onclick = "remchapter(this)" >Remove</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src = 'CRUD.js'></script>
+</html>

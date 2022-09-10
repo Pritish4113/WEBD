@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout and clearTimeout</title>
+</head>
+<body>
+    <div class="container">
+        <p>
+            hello
+        </p>
+    </div>
+</body>
+<script>
+    function greet(name,greeting){
+        console.log(greeting + " " + name);
+    }
+
+    setTimeout(greet, 5000, 'pritish','hey');  //this will execute our function greet at an interval of time
+    /* here above...
+
+    1)we have have to write the name of the function without the brackets, putting brackets will actually call the function, which we dont want
+
+    2)we have to give the time in milli seconds....here we gave 5000 msec i.e. 5 sec
+
+    3)then give arguments of the function (if any) */
+
+    //NOTE : setTimeout functions gets after execution returns a unique ID
+
+    let uniqueid = setTimeout(greet,5000,'ritwik','hiii'); //here we stored the unique_id in a variable
+    console.log(uniqueid); 
+
+
+    clearTimeout(uniqueid); //we have cleared the setTimeout function for uniqueid
+
+
+    setInterval(greet, 1000,'pritish','heyyyyyy'); //this runs the function repeatedly after a certain time interval
+
+
+    //NOTE : WE HAVE USED ABOVE MENTIONED FUNCTIONS FOR MAKING A CLOCK....GO CHECK IT OUT (clock.html)
+
+</script>
+</html>

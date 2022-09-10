@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my first time working css</title>
+
+    <!-- now there are 2 ways of using css, first by using style tag, like we used below -->
+    <style>
+        body{
+            /* body is the whole background  */
+            background-color: yellow;
+        }
+        #first{
+            /* "#" is used for targetting ids */
+            background-color: orange;
+        }
+        .bg2{
+            /* "." is used for targetting classes */
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+    <!-- the second way of using css is by making .css file and importing it here (use link:css) -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- ids have to be unique, however classes can be used multiple numbers of times  -->
+    <div id="first">
+        this is id = first
+    </div>
+    <div id="second">
+        this is id = second
+    </div>
+    <section class="red bg1">
+        this is class = red
+    </section>
+    <section class="blue bg2"> 
+        this is class = blue and bg
+        <!-- here above there are 2 classes that is blue and bg -->
+    </section>
+
+</body>
+</html>

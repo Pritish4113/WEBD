@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>understanding match object</title>
+</head>
+<body>
+    <div class="container">
+        <p>
+            hello
+        </p>
+    </div>
+</body>
+<script>
+    //match object helps us perform math operations easily
+
+    //printing math object
+    let m = Math;
+    console.log(m);
+
+    //printing standard values
+    console.log("the value of Math.E is ",Math.E);
+    console.log("the value of Math.PI is ",Math.PI);
+    console.log("the value of Math.LN2 is ",Math.LN2);
+    console.log("the value of Math.LN10 is ",Math.LN10);
+    console.log("the value of Math.SQRT2 is ",Math.SQRT2);
+    console.log("the value of Math.LOG2E is ",Math.LOG2E);
+
+
+    //functions from math object
+    let a = 34.56;
+    let b = 98.3;
+
+    console.log("the value fo a and b is "+ a + " and "+b );
+    console.log("the rounded value fo a and b is "+ Math.round(a)+ " and "+Math.round(b));
+
+    console.log('the value of 2 raised to the power 3 is', Math.pow(2,3));
+    console.log('the value of 3 raised to the power 3 is', Math.pow(3,3));
+    console.log('the value of 4 raised to the power 2 is', Math.pow(4,2));
+
+    console.log('the square root of 4 is',Math.sqrt(4));
+    console.log('the square root of 16 is',Math.sqrt(16));
+    console.log('the square root of 10 is',Math.sqrt(10));
+
+    //ceil and floor
+    console.log('5.34 rounded down to the nearest integer is',Math.floor(5.34));
+    console.log('5.34 rounded up to the nearest integer is',Math.ceil(5.34));
+
+    //absolute function
+    console.log('the absolute value of 5.66 is',Math.abs(5.66));
+    console.log('the absolute value of -5.66 is',Math.abs(-5.66));
+
+    //trigonometric functions
+    console.log('the value of sin(pi) is',Math.sin(Math.PI));
+    console.log('the value of cos(pi/2) is',Math.cos(Math.PI/2));
+    console.log('the value of tan(pi/4) is',Math.tan(Math.PI/4));
+
+    //min and max functions
+    console.log('the minimum value among 4,5,16 is',Math.min(4,5,16));
+    console.log('the maximum value among 4,5,16 is',Math.max(4,5,16));
+
+    //generating a random number
+    let r = Math.random();  //this will generate a random number between 0 and 1 
+    console.log(r);
+    //random number between a and b -> a + (b-a)*Math.random()
+    let n1 = 1;
+    let n2 = 100;
+    let r1_100 = n1 + (n2-n1)*Math.random();
+    console.log('random numner between 1 and 100 is',r1_100);
+
+</script>
+</html>

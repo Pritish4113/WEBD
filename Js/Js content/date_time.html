@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date and time</title>
+</head>
+<body>
+    <div class="container">
+        <p>
+            hello
+        </p>
+    </div>
+</body>
+<script>
+    let now = new Date(); //this gives the present time
+    console.log(now);
+
+    let std = new Date(0);  //this gives us the reference date and time i.e. 1 Jan 1970
+    console.log(std);  
+
+    // let random = new Date(year, months, date, hours, minutes, seconds, milliseconds)
+    let random = new Date(2090, 11, 4, 11, 34, 34, 45);
+    console.log(random);
+    //above is the way of initialising date and time as per our choice
+  
+
+    let dat = random.getDate();
+    console.log('date is ' + dat); //for getting date
+
+    let yr = random.getFullYear();
+    console.log('year is ' + yr); //for getting year
+
+    let months = random.getMonth();
+    console.log('month is ' + months); //for getting month
+
+    let hr = random.getHours();
+    console.log('hour is ' + hr); //for getting hour
+
+
+    //this another way of setting date and time
+    random.setDate(21);
+    random.setFullYear(3000);
+    random.setMonth(10);
+    console.log(random);
+
+
+    let present = Date.now(); //this gives us the milli seconds passed from the std date and time i.e. 1 Jan 1970
+    console.log(present);
+
+
+    //NOTE : WE HAVE USED ABOVE MENTIONED FUNCTIONS FOR MAKING A CLOCK....GO CHECK IT OUT (clock.html)
+
+
+</script>
+
+</html>

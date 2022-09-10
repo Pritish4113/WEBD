@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events in javascript</title>
+</head>
+<style>
+    #btn{
+        background-color: red;
+        padding: 10px;
+        color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="container">
+        <p id = "para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident vel quis facilis quae hic praesentium debitis temporibus libero nulla. Quam repellat exercitationem maiores ipsum adipisci deleniti odio eaque velit expedita, quo assumenda dolorum magni voluptatem similique minus nostrum quidem unde consequuntur mollitia, odit impedit cupiditate porro sit quos! Eveniet delectus qui modi ex molestiae, animi obcaecati exercitationem corporis accusantium dolorum reiciendis enim facilis vel incidunt quos. Quod quaerat iure, repellat odit corporis maiores obcaecati ipsam omnis! Explicabo fuga iste cum, amet consectetur laboriosam ut hic obcaecati sed qui! Nihil, velit error. Doloribus officiis enim praesentium. Fuga, quia doloribus minus dolor voluptas ad omnis reprehenderit adipisci cumque voluptatibus reiciendis quam dicta iusto possimus! Veniam voluptate ratione omnis aperiam excepturi reprehenderit autem dignissimos libero repellat odit beatae nulla sapiente, mollitia fugit itaque consequatur ullam! Assumenda libero, autem ut perspiciatis eveniet maiores fuga exercitationem sint neque! Veniam corrupti nobis ad ea rem alias aperiam consequuntur quasi excepturi aspernatur quas, fuga quaerat molestiae qui corporis assumenda earum voluptatum odio. Tempore pariatur, beatae asperiores tempora minima nobis temporibus modi impedit velit dolor et, nisi explicabo quaerat omnis minus ab facilis necessitatibus delectus eligendi aspernatur magnam? Qui nisi quis facere explicabo blanditiis. Fuga, numquam odio.
+        </p>
+        <button id = "btn" onclick="togglehide()">show/hide</button> 
+        <!-- above we inserted the function (togglehide()) to hide the text....we made this fucntion in javascript -->
+    </div>
+</body>
+
+<script>
+
+    //below we defined the function for hiding the text
+    function togglehide(){
+        let btn = document.getElementById('btn');
+        let para = document.getElementById('para');
+        if(para.style.display != 'none'){
+            para.style.display = 'none'; //for hiding out text
+        }
+        else{
+            para.style.display = 'block'; //for unhiding our hidden text
+        }
+    }
+
+
+    //this fucntion will give us alert everytime our mouse enters the para
+    para.addEventListener('mouseover', function run(){  //mouseover means the mouse running over something
+        alert('mouse is inside the para');
+    });
+    //here above we defined the function in eventlistener itself...which is not preferred
+
+
+
+    //this function will give us alert everytime our mouse moves out of the para
+    para.addEventListener('mouseout', run);  //mouseout means mouse is coming out of something
+
+    function run(e){
+        alert('mouse is outside the para');
+    }
+
+    //here above we made the function outside the eventlistener and then used it...this method is preferale 
+
+</script>
+</html>

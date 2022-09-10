@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .content{
+        background-color: red;
+        padding : 2px 3px 4px 5px;  /*this padding is set according to the top right bottom and left */
+        margin : 4px; /* this means that all - top right bottom and left are set as 4px */
+        height: 355px;
+        width : 400px;
+        border : 3px;
+        border-color: black;
+        border-style: dashed;  /* mostly solid border style is used, moreover you can see all the border styles by going to mdn references */
+        border-radius: 20px; /* this makes corner of our box rounded */
+    }
+
+    /* MARGIN COLLAPSE */
+    .box1{
+        background-color: aqua;
+        margin : 40px;   /* here we alloted 40px of margin to box1 */
+    }
+
+    .box2{
+        background-color: blue;
+        margin : 30px;   /* here we alloted 30px of margin to box1 */
+    }
+
+    /* so.....30 px margin of box 2 will get overlapped with the 40px margin of box 1 */
+
+    /* when 2 margins are there side by side then the bigger margin is considered, this is called margin collapse */
+
+    /* BOX SIZING */
+
+    .parent_box{
+        width : 300px;
+        height : 500px;
+        background-color: red;
+    }
+    .child_box{
+        background-color: aqua;
+        width : 100%; /* this 100% widht is according to the widht of the parent box */
+        padding : 30px;
+        border : 2px;
+        border-style: dotted;
+        box-sizing: border-box;  /* here we used "border-box" type box sizing, bu default "content_box" is used */
+        /* for uderstanding the use and concent of box sizing watch ---> https://youtu.be/Edsxf_NBFrw  */
+    }
+
+</style>
+<body>
+    <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tenetur nobis eos ullam, maiores dolores sed labore alias vitae. Ipsa est ab voluptate illum, minima voluptas fugit assumenda, animi quo dolor debitis, doloremque inventore quas. Eum nam odit repellat qui laudantium voluptatibus ipsam fuga distinctio sequi, magni quibusdam eos incidunt labore harum ex itaque dolore esse. Recusandae sed iure, fuga debitis doloribus explicabo harum temporibus, deleniti consequuntur, impedit cumque tempore consequatur culpa hic amet voluptatibus corporis dolorum itaque neque rem nostrum! Eligendi mollitia quibusdam recusandae quasi! Magni, fugit exercitationem, error expedita, reprehenderit architecto eum itaque consectetur enim perferendis repellat quibusdam.
+    </div>
+
+    <div class="box1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, labore laudantium ullam, adipisci esse totam id harum doloremque temporibus aut maxime quaerat molestias consequatur. Vero adipisci nam quaerat quod delectus maiores, unde aperiam ducimus non molestias ut, ipsa dignissimos odit.</div>
+    
+    <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio soluta distinctio corrupti architecto esse saepe ullam culpa voluptates, nesciunt nulla voluptatem modi doloribus, commodi, numquam sed animi fugiat quod nihil maxime quidem qui. Officiis, ducimus iste. Asperiores harum ipsa fugiat.</div>
+
+    <div class="parent_box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni alias in veritatis quasi sunt iusto laboriosam impedit facere itaque dignissimos animi aspernatur, quam distinctio quod voluptates ipsa quia necessitatibus. Deleniti recusandae dignissimos repudiandae laudantium.
+        <div class="child_box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quibusdam.
+        </div>
+    </div>
+</body>
+</html>
