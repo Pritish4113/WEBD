@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grids in css</title>
+</head>
+<style>
+    .container{
+        background-color: yellow;
+        height : 60vh;
+
+        display: grid; 
+        /* this display property is used for using grids in html css */
+
+        grid-gap: 9px 4px; 
+        /* this defines the gap between rows and columns i.e. 9px for rows and 4px for columns....if only 1 value is given, then both rows and columns are gapped according to that value */
+        
+        grid-template-columns: auto auto auto; 
+        /* this defines the number and length of the columns.....in above given example, 3 columns will be formed and middle column will be of width 20vw */
+
+        grid-template-rows: auto auto;
+        /* this is same as above given property, for our rows in the grid */
+
+        /* NOTE : WE CAN USE JUSTIFY-CONTENT , ALIGN-CONTENT, ALIGN-TEXT AND MANY MORE PROPERTIES ON OUR GRID FOR DEFNING THE LAYOUT OF OUR WEBSITES */
+
+    }
+    .item{
+        background-color: orange;
+        border: 2px solid black;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item" style = "grid-row: 1/3;">1</div> 
+        <!-- here we applied css to a single element -->
+        <!-- we applied the grid-row property which will allow our element to cover space from 1/3 i.e. line 1 to line 3 -->
+
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item" style = "grid-row: 1/span 2;">6</div>
+        <!-- we can also apply grid-row property in this way - 1/span 2 which means start from row 1 and cover 2 rows  -->
+
+        <!-- similarly we can apply grid-column property -->
+
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+</body>
+</html>

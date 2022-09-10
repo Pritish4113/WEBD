@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSITIONS</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+    img{
+        height: 60vh;
+        width : 50vw;
+
+        /* these are the transition properties */
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in;
+        transition-delay: .3s; /*this causes a delay in our transition*/
+
+        /*there is also a short hand way of setting all of the above*/
+        transition: all 0.1s ease-in 0.1s;
+
+        /*setting multiple properties*/
+        transition: width 1s ease-in,height 2s ease-in; /*here we set width and height seperately by putting a comma*/
+    }
+    img:hover{
+        /*this helps us change image properties when we hover over it */
+        height: 30vh;
+        width: 25vw;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box"><img src = "https://images.unsplash.com/photo-1659940316181-d34bf23ae835?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,182 @@
+@media screen and (min-width : 1300px){
+    .collectioncard{
+        height: 38vh;
+        width: 30vh;
+    }
+    .collection1:before, .collection2:before, .collection3:before, .collection4:before{
+        height: 38vh;
+        width: 30vh;
+    }
+}
+
+@media screen and (max-width : 1230px){
+    .p1{
+        font-size: 1.3rem;
+    }
+    .p2{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width : 1000px){
+    .outletcard{
+        margin: 5px;
+    }
+}
+
+@media screen and (min-width : 815px) and (max-width : 1100px){
+    .collectioncard{
+        height: 38vh;
+        width: 22vw;
+    }
+    .collection1:before, .collection2:before, .collection3:before, .collection4:before{
+        height: 38vh;
+        width: 22vw;
+    }
+
+    .outletcard{
+        margin: 5px;
+    }
+
+    .cardcontent{
+        height: 9vh;
+    }
+}  
+
+@media screen and (max-width : 815px){
+    .outletcard{
+        margin: 5px;
+    }
+
+    .placecard{
+        width: 31vw;
+    }
+}
+
+@media screen and (max-width : 800px){
+    .intro p{
+        font-size: 2rem;
+    }
+    .intro input{
+        width: 75vw;
+    }
+    .navigation{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width : 815px) and (min-width : 580px){
+    .cardpanel3{
+        flex-wrap: wrap;
+    }
+    
+    .collectioncard{
+        height: 38vh;
+        width: 35vh;
+        margin: 8px;
+    }
+    
+    .collection1:before, .collection2:before, .collection3:before, .collection4:before{
+        height: 38vh;
+        width: 35vh;
+    }
+/* 
+    .collectioncard:nth-child(4){
+        margin: 0 0 0 19px;
+    }
+    
+    .collectioncard:nth-child(4){
+        margin: 20px 0 0 20px;
+    }
+    .collectioncard:nth-child(3){
+        margin: 20px 0 0 0;
+    } */
+}
+
+@media screen and (min-width : 480px) and (max-width : 750px){
+    .cardpanel{
+        flex-direction: column;
+    }
+
+    .card1, .card2, .card3{
+        width: 43vh;
+        margin: 8px;
+    } 
+}
+
+@media screen and (max-width : 700px){
+    .intro p{
+        font-size: 1.6rem;
+    }
+
+    #services h2{
+        font-size: 2rem;
+    }
+    #Outlets h2{
+        font-size: 2rem;
+    }
+    #collections h2{
+        font-size: 2rem;
+    }
+    .places p{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width : 580px){
+    .cardpanel3{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .collectioncard{
+        height: 38vh;
+        width: 60vw;
+    }
+    
+    .collection1:before, .collection2:before, .collection3:before, .collection4:before{
+        height: 38vh;
+        width: 60vw;
+    }
+
+    .collectioncard{
+        margin: 8px;
+    }
+    
+    .places p{
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width : 580px){
+    nav ul li a{
+        margin: 0px 13px;
+    }
+
+    .cardpanel4{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;   
+    }
+
+    .placecard{
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width : 480px){
+    .cardpanel{
+        flex-direction: column;
+    }
+
+    .card1, .card2, .card3{
+        width: 80vw;
+        margin: 8px;
+    } 
+}
+
+@media screen and (max-width : 420px){
+    nav ul li a{
+        font-size: 1.1rem;
+    }
+}
