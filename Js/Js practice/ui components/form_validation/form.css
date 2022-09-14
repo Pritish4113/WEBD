@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    background-image: linear-gradient(120deg, #5f57d1, #c065c0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: 48vh;
+    width: 23vw;
+}
+
+.action{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    font-family: 'Roboto Slab', serif;
+    margin: 30px 0 0 0;
+    font-size: 2.2rem;
+}
+
+#email{
+    font-size: 1.2rem;
+    border-radius: 10px;
+    margin: 40px 0 0 0;
+    width: 20vw;
+    height: 7vh;
+    padding: 0 0 0 10px;
+
+}
+
+#password{
+    font-size: 1.2rem;
+    border-radius: 10px;
+    width: 20vw;
+    height: 7vh;
+    margin: 20px 0 0 0;
+    padding: 0 0 0 10px;
+}
+
+#nameerror{
+    text-align: left;
+    color: red;
+}
+#passerror{
+    text-align: left;
+    color: red;
+}
+
+#submit{
+    cursor: pointer;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    background-color: #726aff;
+    margin: 30px 0 0 0;
+    font-size: 1.2rem;
+}
+#submit:hover{
+    background-color: #544ebb;
+    color: white;
+}

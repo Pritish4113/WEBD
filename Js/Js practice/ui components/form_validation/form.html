@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+</head>
+<link rel="stylesheet" href="form.css">
+<body>
+    <div class="container">
+        <div class="form">
+            <h2>Login</h2>
+            <form class = 'action' onsubmit = 'return validation()' action="">
+                <!-- here above if 'validation()' returns true, then the form is submitted otherwise the form is not submitted -->
+                <input id = 'email' type = 'text' name = 'email' placeholder="Email">
+                <p id="nameerror"></p>
+                <input id = 'password' type = 'password' name = 'password' placeholder="Password">
+                <p id="passerror"></p>
+                <input id = 'submit' type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+<script src = 'form.js'></script>
+</html>

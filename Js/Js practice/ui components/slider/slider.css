@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    position: absolute;
+    width: 100vw;
+    height: 55vh;
+}
+
+.arrows{
+    cursor: pointer;
+    position: absolute;
+    top: 24%;
+    background-color: rgba(255, 255, 255, 0.532);
+    color: black;
+    border-radius: 50%; 
+    padding: 12px 22px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.arrows:hover{
+    background-color: rgba(255, 255, 255, 0.78);
+}
+
+.next{
+    right: 15px;
+}
+.prev{
+    left: 15px;
+}
+
+.caption{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.37);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    top: 418px;
+}
+
+.slider{
+    display: none;
+}
