@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#page1{
+    display: flex;
+    margin: 0 0 20px 0;
+}
+
+.left{
+    background: url('img/piano.jpg') no-repeat center center/cover;
+    height: 100vh;
+    width: 70vw;
+}
+.right{
+    height: 100vh;
+    width: 30vw;
+}
+
+.logo{
+    font-family: 'Bona Nova', serif;
+    font-size: 2rem;
+    margin: 15px 40px 15px 20px;
+}
+.paddingnav{
+    padding: 28px 17px;
+}
+
+.navbar{
+    margin: 10px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    display: flex;
+}
+.navbar li:hover{
+    color: rgb(238, 219, 98);
+}
+
+.nav1{  
+    list-style: none;
+    display: flex;
+}
+.nav2{  
+    margin: 10px 30px 0 0;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 1.1rem;
+}
+
+li{
+    cursor: pointer;
+}
+
+.textright{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+}
+
+.textright a{
+    color: black;
+    margin: 20px 30px;
+    font-size: 1rem;
+}
+
+.textright p{
+    margin: 15px 30px;
+}
+
+.m{
+    font-family: 'Bona Nova', serif;
+    margin: 0 5px;
+}
+
+.time{
+    font-weight: bold;
+    margin: 30px;
+    font-size: 3rem;
+}
+
+.guitarcollection{
+    display: flex;
+    flex-direction: column;
+}
+
+.guitartext{
+    display: flex;
+    font-size: 2.3rem;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    margin: 40px;
+}
+
+.cardpanel1{
+    display: flex;
+    width: 100vw;
+    height: 67vh;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    width: 40vw;
+    height: 60vh;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.card p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    margin: 20px;
+}
+.card span{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    margin: 20px;
+}
+
+.card1{
+    cursor: pointer;
+    background: url('img/guitar1.jpg') no-repeat center center/cover;
+}
+.card2{
+    cursor: pointer;
+    color: black;
+    background: url('img/guitar2.jpg') no-repeat center center/cover;
+}
+.card3{
+    cursor: pointer;
+    color: black;
+    background: url('img/guitar3.jpg') no-repeat center center/cover;
+}
+.pcard1{
+    cursor: pointer;
+    background: url('img/paino1.jpg') no-repeat center center/cover;
+}
+.pcard2{
+    cursor: pointer;
+    color: black;
+    background: url('img/paino2.jpg') no-repeat center center/cover;
+}
+.pcard2 span{
+    color: white;
+}
+
+.pcard3{
+    cursor: pointer;
+    background: url('img/piano3.jpg') no-repeat center center/cover;
+}
+
+.copy{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+
+
+}
+
+  
+
